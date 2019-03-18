@@ -1,0 +1,23 @@
+<h4>Escoja una consulta</h4>
+<mat-form-field>
+  <mat-select [(value)]="selected" placeholder="Consultas disponibles">
+    <mat-option  *ngFor="let consulta of consultas" [value]="consulta">
+      {{consulta.nombre}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field *ngIf="selected.value == 'rangoedad'">
+	<mat-select [(value)]="selected2">
+	  <mat-option value="0-35">0-35</mat-option>
+	  <mat-option value="35-55">35-55</mat-option>
+	  <mat-option value="55<=">55<=</mat-option>
+	</mat-select>
+  </mat-form-field>
+
+<button mat-raised-button (click)="sparkql(selected)" color="primary">Consulta</button>
+
+
+<div [innerHTML]="sparkqlData._body"></div>
+
+

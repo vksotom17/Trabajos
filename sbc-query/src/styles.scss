@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+body{
+    background-color: #3670b4;
+  font-family: 'Comfortaa','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height: 100vh;
+
+}
+.avatar{
+    background-color: midnightblue;
+    border-radius: 20%;
+    border: .2rem solid #0F4D99;
+}
+.mat-drawer-container{
+  background-color: transparent !important;
+}
